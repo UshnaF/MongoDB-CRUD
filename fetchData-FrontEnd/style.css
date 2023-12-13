@@ -1,0 +1,97 @@
+#student-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.student-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+.edit-btn{
+    background-color: #4caf50;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+.delete-btn{
+    background-color: rgb(235, 28, 28);
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: #4b45a0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.modal input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.modal button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .student-item {
+        padding: 10px;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+}
+
+#addStudentBtn {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#addStudentBtn:hover {
+    background-color: #45a049;
+}
+
+h1{
+    text-align:center;
+}
